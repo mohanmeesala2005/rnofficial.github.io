@@ -1,0 +1,86 @@
+.navbar {
+    background: linear-gradient(to right,#031f8e,black)!important;
+    top: 0;
+    /* height: 60px; */
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    overflow-x: visible !important;
+  }
+  
+  .navbar_logo {
+    width: 60px;
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
+    font-style: normal;
+      }
+      
+
+  
+  .navbar-item {
+    margin-right: 10px;
+  }
+  
+  .toggler_menu {
+    display: none;
+  }
+  
+  .navbar-link {
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px 8px 12px;
+  }
+  
+  .navbar-link:hover {
+    color: #0056b3;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .navbar-list {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      /* z-index: 9999; */
+    }
+  
+    .navbar-item {
+      float: none;
+      width: 100%;
+    }
+  
+    .navbar-toggler {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      color: white;
+      font-size: 20px;
+      /* z-index: 999; */
+      background: transparent;
+      border: none;
+    }
+  
+    .toggler_menu {
+      display: block;
+      width: 50px;
+    }
+  }
