@@ -4,8 +4,7 @@ import Rnlogo from './components/rnlogo'
 import AboutUs from './components/aboutus'
 import Sponsers from './components/sponsers'
 import Teamrn from './components/Teamrn'
-import { Carousel } from './components/carousel'
-import { slides } from './components/carouselData.json'
+import HeroSlider from './components/HeroSlider'
 import './App.css'
 import './index.css'
 
@@ -17,8 +16,7 @@ function App() {
       <AboutUs />
       <Sponsers />
       <Teamrn />
-      <Carousel />
-      <Carousel data={slides} />
+      <HeroSlider />
     </div>
   )
 }
